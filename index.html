@@ -4,11 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Rachael O'Moore</title>
+    <meta name="description"
+        content="Rachael O'Moore, WDD131 – Dynamic Web Fundamentals, My profile home page according to course">
+    <meta name="author" content="Rachael O'Moore">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Michroma&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <h1>Test 2</h1>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="www.linkedin.com/in/rachael-o-moore-90ab7a401" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" title="Canvas">I-Learn</a></li>
+                <li><a href=https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/18?lang=eng&id=p10#p10"
+                        title="Scripture">Scripture</a></li>
+                <li><a href="#" title="Final Project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Rachael O'Moore</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="top-section">
+                <p>My name is Rachael. I'm from South Africa. I'm studying a Bachelor of Software Development through
+                    BYU Idaho. I took
+                    a gap year to au pair in the Netherlands and travel europe. I love traveling, doing art and sewing
+                    clothes.</p>
+                <img src="images/about-me-picture.jpg" width="200">
+            </div>
+            <h3>South Africa</h3>
+            <div class="bottom-section">
+
+                <img src="images/south-african-flag.jpg" alt="Flag of South Africa" width="200">
+                <p>South Africa is known as the 'Rainbow Nation' because it is an extremely diverse nation. It has 12
+                    official languages and has 3 capital cities.</p>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="#" title="Dev.to Community">Dev.to Community</a></li>
+                <li><a href="#" title="Smashing Magazine">Smashing Magazine</a></li>
+                <li><a href="#" title="W3 Schools">W3 Schools</a></li>
+                <li><a href="#" title="Udemy">Udemy</a></li>
+                <li><a href="#" title="Lorem Picsum Image Placeholder">Lorem Picsum Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> ☘️ Rachael O'Moore ☘️ South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>

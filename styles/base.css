@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 100%;
+}
+
+:root {
+    --primary-color: rgb(0, 124, 90);
+    --secondary-color: rgb(150 ,150 ,150);
+    --accent1-color: rgb(0, 0, 0);
+    --accent2-color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+header span {
+    display: block;
+    justify-self: center;
+    font-weight: 300;
+    padding: 2rem;
+    font-size: 200%;
+    color: var(--accent2-color);
+}
+
+nav {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-size: 150%;
+}
+
+nav a:hover {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-decoration: overline;
+}
+
+main {
+    max-width: 1200px;
+    justify-self: center;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+h1 {
+    grid-column: 1/4;
+    justify-self: center;
+    margin: 1rem;
+    font-size: 300%;
+    font-weight: 300;
+}
+
+h3 {
+    padding: 1rem;
+    border-bottom: 2px solid var(--secondary-color);
+    text-align: center;
+    max-width: 400px;
+    margin-left: 30px;
+    margin-top: -60px;
+}
+
+.card {
+    display: grid;
+    border: 10px solid var(--primary-color);
+    border-radius: 5%;
+    margin: 1rem;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    height: 50px;
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    align-content: center;
+    font-size: 150%;
+    color: var(--accent2-color);
+}
+
+.card ul {
+    padding: 1rem;
+    align-items: center;
+    justify-self: center;
+    font-size: 110%;
+    color: var(--primary-color);
+}
+
+.card li {
+    margin-top: 1rem;
+}
+
+.card a:link {
+    color: var(--primary-color);
+}
+
+.card div {
+    padding: 2rem;
+    font-size: 120%;
+}
+
+.top-section {
+    display: grid;
+    grid-template-columns: 1fr 120px 50px;
+    font-size: 120%;
+    gap: 20px;
+}
+
+.bottom-section {
+    display: grid;
+    grid-template-columns: 220px 1fr 250px;
+}
+
+footer {
+    background-color:  var(--primary-color);
+    color: var(--accent2-color);
+    padding: 2rem;
+    justify-items: center;
+    font-size: 120%;
+}

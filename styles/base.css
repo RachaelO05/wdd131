@@ -6,7 +6,7 @@
 }
 
 :root {
-    --primary-color: rgb(0, 124, 90);
+    --primary-color: rgb(2, 69, 51);
     --secondary-color: rgb(150 ,150 ,150);
     --accent1-color: rgb(0, 0, 0);
     --accent2-color: rgb(255, 255, 255);
@@ -52,6 +52,7 @@ nav a:hover {
 
 main {
     max-width: 1200px;
+    min-width: auto;
     justify-self: center;
     margin: 2rem;
     display: grid;

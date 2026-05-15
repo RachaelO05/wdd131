@@ -3,7 +3,7 @@ const header = document.querySelector("header");
 const span = document.querySelector("span")
 
 menuButton.textContent = '☰';
-menuButton.style.backgroundColor = '#03c28f'
+menuButton.style.backgroundColor = '#02a67a'
 menuButton.style.border = 'none';
 menuButton.style.color = '#fff';
 menuButton.style.fontSize = '150%'

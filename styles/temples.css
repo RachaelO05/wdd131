@@ -13,7 +13,7 @@
 header {
     background-color: var(--primary-color);
     color: var(--accent-color);
-    display: grid;
+    display: flex;
     text-align: center;
     grid-gap: 1rem;
     padding: 1rem;
@@ -25,11 +25,21 @@ header span {
     font-size: 300%;
 }
 
+nav {
+    display: none;
+}
+
+nav.open {
+    display: block;
+    width: 100%;
+}
+
 nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
 }
+
 
 nav a {
     color: var(--accent-color);

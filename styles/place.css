@@ -20,7 +20,7 @@ header {
     font-weight: 700;
 }
 
-header span {
+header h1 {
     display: block;
     text-align: center;
 }

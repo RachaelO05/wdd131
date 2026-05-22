@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals – Country Page</title>
+    <meta name="author" content="Rachael O'Moore">
+    <meta name="description" content="Rachael O'Moore, WDD131 – Dynamic Web Fundamentals, My place page according to course">
+    
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lato:wght@100;400;900&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <span>South Korea</span>     
+    </header>
+    <main>
+        <picture>
+            <source class="large-image" srcset="images/south-korea-large.webp" media="(min-width: 900px)">
+            <img src="images/south-korea-small.webp" alt="South Korea">
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <p><span class="label">Area: </span>100,210 sq km</p>
+            <p><span class="label">Population: </span>51,784,059</p>
+            <p><span class="label">Capital: </span>Seoul</p>
+            <p><span class="label">Languages: </span>Korean</p>
+            <p><span class="label">Currency: </span>South Korean Won</p>
+            <p><span class="label">Time Zone: </span>UTC +9</p>
+            <p><span class="label">Calling Code: </span>+82</p>
+            <p><span class="label">Internet TLD: </span>.kr</p>
+        </section>
+        <section class="weather">
+            <h2>Weather
+                <img src="images/cloudy-small.svg" alt="weather icon" class="weather-icon">
+            </h2>
+            <p><span class="label">Temperature: </span> 10°C</p>
+            <p><span class="label">Conditions: </span>Partly cloudy</p>
+            <p><span class="label">Wind: </span> </span>5km/h</p>
+            <p><span class="label">Wind Chill: </span> <span id="windchill"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🌸 Rachael O'Moore 🌸 South Africa</p>
+        <p>South Korea</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

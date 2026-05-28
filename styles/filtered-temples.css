@@ -68,12 +68,33 @@ nav a:hover {
     text-decoration: overline;
 }
 
-main {
+section {
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 auto;
     max-width: 350px;
     padding: 1rem;
+}
+
+section div {
+    margin: 1rem;
+    background-color: rgb(223, 223, 223);
+    padding: 1rem;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+section p {
+    padding: .4rem;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 10px 10px 10px gray;
 }
 
 footer {

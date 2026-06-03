@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #321f14;
+    --secondary-color: #6f4e3f80;
+    --Accent1-color: #fff;
+    --Accent2-color: #000;
+    
+    --heading-font: "Forum", serif;
+    --content-font: "Inconsolata", monospace;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--Accent1-color);
+}
+
+header div {
+    border: 1px solid var(--Accent1-color);
+    padding: 1rem;
+    max-width: 800px;
+    justify-self: center;
+    font-size: 120%;
+    text-align: center;
+}
+
+header div p{
+    padding: .8em;
+}
+
+main {
+    max-width: 1300px;
+    justify-self: center;
+}
+
+section{
+    background-color: var(--secondary-color);
+    max-width: 1000px;
+    font-size: 150%;
+}
+
+section p {
+    padding: 2rem 1rem 3rem 1rem;
+}
+
+section span {
+    display: block;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 350%;
+}
+
+h2 {
+    font-size: 200%;
+    background-color: var(--Accent1-color);
+    width: 100%;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+    padding: 1rem;
+}
+
+p, span {
+    font-family: var(--content-font);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--Accent1-color);
+    padding: 2rem;
+    text-align: center;
+    font-size: 150%;
+    font-family: var(--heading-font);
+}
+
+.wireframes {
+    text-align: center;
+}

@@ -29,7 +29,7 @@ const products = [
 const currentPage = window.location.pathname;
 const productName = document.getElementById("productName");
 
-if (currentPage.includes("form.html") || currentPage.includes("form")) {
+if (currentPage.includes("form.html")) {
     products.forEach((product) => {
         option = document.createElement("option");
 

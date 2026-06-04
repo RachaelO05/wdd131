@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Rachael O'Moore</title>
+    <meta name="author" content="Rachael O'Moore">
+    <meta name="description" content="Rachael O'Moore, WDD131 – Dynamic Web Fundamentals, My form page according to course">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Michroma&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label>Product Name*<select id="productName" name="productName" required>
+                <option disabled selected>Select a Product ...</option>
+            </select></label>
+
+            <fieldset class="rating">
+                <legend>Overall Rating*</legend>
+
+                <label>☆<input type="radio" id="rating" name="rating" value="1" required></label>
+                <label>☆☆<input type="radio" id="rating" name="rating" value="2"></label>
+                <label>☆☆☆<input type="radio" id="rating" name="rating" value="3"></label>
+                <label>☆☆☆☆<input type="radio" id="rating" name="rating" value="4"></label>
+                <label>☆☆☆☆☆<input type="radio" id="rating" name="rating" value="5"></label>
+            </fieldset>
+            
+            <label>Date of Installation*<input type="date" id="installationDate" name="installationDate" required></label>
+        
+            <fieldset class="features">
+                <legend>Which of the features did you find useful in this product?*</legend>
+                <p>(Select all that apply)</p>
+
+                <label>Durability<input type="checkbox" id="durability" name="features" value="Durability"></label>
+                <label>Ease of use<input type="checkbox" id="easeOfuse" name="features" value="Ease of use"></label>
+                <label>Performance<input type="checkbox" id="performance" name="features" value="Performance"></label>
+                <label>Design<input type="checkbox" id="design" name="features" value="Design"></label>
+            </fieldset>
+
+            <label>Written review (optional)<textarea id="writtenReview" name="writtenReview"></textarea></label>
+
+            <label>Your Name: (optional)<input type="text" id="userName" name="userName"></label>
+
+            <input type="submit" value="Post Product Review">
+            
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> ☘️ Rachael O'Moore ☘️ South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

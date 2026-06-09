@@ -54,6 +54,11 @@ if (currentPage.includes("review.html")) {
 
     localStorage.setItem("reviewCount", reviewCount);
 
-    console.log("Review Completer: ", reviewCount)
+    const thanks = document.querySelector(".thanks");
+    const reviewDisplay = document.createElement("div");
+
+    thanks.appendChild(reviewDisplay);
+
+    reviewDisplay.textContent = `Amount of Reviews Posted: ${reviewCount}`;
 }
 

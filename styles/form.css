@@ -95,11 +95,15 @@ input[type="submit"] {
     text-align: center;
 }
 
-.thanks p {
+.thanks p, div {
     border: 5px solid var(--primary-color);
     padding: 1rem;
     background-color: var(--primary-color);
     color: var(--accent1-color);
+}
+
+.thanks div {
+    text-decoration: overline;
 }
 
 footer {

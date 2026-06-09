@@ -102,9 +102,9 @@ input[type="submit"] {
     color: var(--accent1-color);
 }
 
-/* .thanks div {
+.thanks div {
     text-decoration: overline;
-} */
+}
 
 footer {
     background-color: var(--primary-color);

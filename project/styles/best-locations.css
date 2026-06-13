@@ -1,0 +1,173 @@
+:root {
+    --primary-color: #321f14;
+    --secondary-color: #6f4e3fe7;
+    --accent1-color: #fff;
+
+    --heading-font: "Forum", serif;
+    --content-font: "Inconsolata", monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+}
+
+header picture {
+    display: block;
+}
+
+.menu {
+    position: absolute;
+    padding-bottom: 1rem;
+}
+
+.menu h1 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 250%;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    font-size: 150%;
+    padding: 1rem;
+    text-decoration: overline;
+    font-weight: 900;
+}
+
+.menu li {
+    padding: 1rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--accent1-color);
+}
+
+.menu a:hover {
+    color: var(--accent2-color);
+    text-decoration: overline;
+}
+
+.menu .active {
+    color: var(--primary-color);
+    text-decoration: overline;
+}
+
+main {
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    font-family: var(--content-font);
+}
+
+section {
+    width: 450px;
+    justify-self: center;
+    padding: 2rem;
+    text-align: left;
+    margin: 1rem;
+}
+
+section h2 {
+    font-size: 200%;
+    text-decoration: overline;
+}
+
+section p {
+    padding: 1rem;
+    font-size: 150%;
+}
+
+.section1 {
+    color: var(--primary-color);
+    border: double 5px var(--primary-color);
+}
+
+.section2 {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    border: double 5px var(--accent1-color);
+}
+
+select, label {
+    font-size: 150%;
+    margin: .5rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border: double 5px var(--primary-color);
+}
+
+table {
+    padding: 1rem;
+    font-size: 100%;
+    width: 500px;
+    border: double 10px var(--primary-color);
+    border-collapse: collapse;
+    font-weight: 600;
+    justify-self: center;
+}
+
+thead {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+
+.Theading {
+    text-align: left;
+    font-size: 150%;
+}
+
+tr, th, td {
+    padding: .5rem;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.long {
+    width: 150px;
+}
+
+.rating {
+    font-size: 80%;
+}
+
+td {
+    width: 80px;
+}
+
+tbody {
+    background-color: var(--secondary-color);
+}
+
+thead th {
+    padding: 1rem;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: .85rem;
+    text-align: left;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    font-size: 150%;
+    padding: 2rem;
+    text-align: center;
+    border-top: solid 5px var(--secondary-color);
+}

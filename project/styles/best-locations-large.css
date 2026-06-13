@@ -1,0 +1,34 @@
+@media (min-width: 800px) {
+    table {
+        width: 1000px;
+        font-size: 150%;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .menu {
+        display: flex;
+        align-items: center;
+        align-self: center;
+    }
+
+    .menu h1 {
+        text-align: left;
+        font-size: 350%;
+    }
+
+    .menu ul {
+        font-size: 200%;
+        text-align: right;
+    }
+
+    section {
+        width: 1000px;
+        font-size: 150%;
+    }
+    
+    section h2 {
+        font-size: 200%
+    };
+}

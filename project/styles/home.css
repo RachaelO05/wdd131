@@ -1,0 +1,174 @@
+:root {
+    --primary-color: #321f14;
+    --secondary-color: #6f4e3fe7;
+    --accent1-color: #fff;
+    
+    --heading-font: "Forum", serif;
+    --content-font: "Inconsolata", monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+}
+
+header picture {
+    display: block;
+}
+
+.menu {
+    position: absolute;
+    padding-bottom: 1rem;
+}
+
+.menu h1 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 250%;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    font-size: 150%;
+    padding: 1rem;
+    text-decoration: overline;
+    font-weight: 900;
+}
+
+.menu li {
+    padding: 1rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--accent1-color);
+}
+
+.menu a:hover {
+    color: var(--accent2-color);
+    text-decoration: overline;
+}
+
+.menu .active {
+    color: var(--primary-color);
+    text-decoration: overline;
+}
+
+main {
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    font-family: var(--content-font);
+}
+
+.hero p{
+    text-align: center;
+    justify-self: center;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    border: dotted 5px var(--accent1-color);
+    font-weight: 500;
+    padding: 2rem;
+    margin-top: 1rem;
+    width: 400px;
+    font-size: 150%;
+}
+
+
+h2 {
+    font-size: 300%;
+    margin-top: 4rem;
+    text-decoration: overline;
+}
+
+.benefits {
+    background-color: var(--primary-color);
+    padding: 2rem;
+    width: 500px;
+    justify-self: center;
+    margin: 5rem 0 0 0;
+    color: var(--accent1-color);
+    border: double 10px var(--accent1-color);
+}
+
+.benefit, .benefitReverse {
+    font-size: 150%;
+    width: 400px;
+    justify-self: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    border: double 5px var(--primary-color);
+}
+
+.benefit p, .benefitReverse p {
+    padding: 1rem;
+    margin: 1rem;
+    border: solid 1px var(--primary-color);
+}
+
+
+.tips {
+    
+    width: 500px;
+    justify-self: center;
+    font-size: 150%;
+    text-align: left;
+    padding: 2rem;
+}
+
+.tips h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: var(--secondary-color);
+    width: 300px;
+    justify-self: center;
+    padding: 2rem 0 1rem 0;
+    border: double 8px var(--primary-color);
+}
+
+.tips span {
+    display: list-item;
+    list-style-type: circle;
+    text-indent: -30px;
+    padding: 2rem;
+}
+
+.tips div {
+    align-content: center;
+}
+
+.brown {
+    background-color: var(--primary-color);
+    padding-left: 4rem;
+    color: var(--accent1-color);
+    border: double 5px var(--accent1-color);
+}
+
+.white {
+    color: var(--primary-color);
+    padding-left: 4rem;
+    border: solid 5px var(--primary-color);
+}
+
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    font-size: 150%;
+    padding: 2rem;
+    text-align: center;
+    border-top: solid 5px var(--secondary-color);
+}

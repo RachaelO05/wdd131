@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals – Project Home Page</title>
+    <meta name="author" content="Rachael O'Moore">
+    <meta name="description" content="Home Page for my WDD131 project. Thrifting page titled Hidden On A Hanger.">
+
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <script src="scripts/year.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inconsolata:wght@200..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <picture>
+            <source srcset="images/header.webp" media="(min-width: 1000px)" width="1500px" height="200px">
+            <source srcset="images/header.webp" media="(min-width: 600px)" width="1000px" height="200px">
+            <img src="images/header.webp" alt="Thrifting Image" width="600px" height="200px" loading="lazy">
+        </picture>
+        <div class="menu">
+            <h1>Hidden On a Hanger</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html" class="active" title="Home">Home</a></li>
+                    <li><a href="best-locations.html" title="thriftPlaces">Best Locations</a></li>
+                    <li><a href="recent-finds.html" title="recentFinds">Recent Finds</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 600px)" width="1500px">
+                <img src="images/hero-small.webp" alt="Thrifting Image" width="500px" loading="lazy">
+            </picture>
+            <p>
+                Becoming a thrifter could become the greatest lifestyle change you could make.
+                Although it can seem like more work than going to a retail store thats organized
+                and has recent trends, it's worth the work. Through thrifting you can find unique
+                clothing for a portion of the price of retail shops. 
+            </p>
+        </div>
+
+        <section class="benefits">
+            <h2>Benefits</h2>
+            <div class="benefit">
+                <picture>
+                    <source srcset="images/benefit1.webp" media="(min-width: 800px)" width="300px">
+                    <img src="images/benefit1.webp" alt="Benefit 1 image" width="400px" loading="lazy">
+                </picture>
+                <p>
+                    Benefit 1: Thrifting allows you to save money by buying second hand, as you only pay a fraction
+                    of the price compared to a retail store. This allows you to stretch your wardrobe budget and 
+                    test different styles at a more affordable price.
+                </p>
+            </div>
+            <div class="benefitReverse">
+                <picture>
+                    <source srcset="images/benefit2.webp" media="(min-width: 800px)" width="300px">
+                    <img src="images/benefit2.webp" alt="Benefit 1 image" width="400px" loading="lazy">
+                </picture>
+                <p>
+                    Benefit 2: It allows you to create a unique personal style as you're not just shopping
+                    and places that are selling mass produced trends. Thrift stores have clothing items
+                    that could be decades apart as well as they aren't dictated by seasonal palettes.
+                </p>
+            </div>
+            <div class="benefit">
+                <picture>
+                    <source srcset="images/benefit3.webp" media="(min-width: 800px)" width="300px">
+                    <img src="images/benefit3.webp" alt="Benefit 1 image" width="400px" loading="lazy">
+                </picture>
+                <p>
+                    Benefit 3: It is environmentally sustainable as it reduces demand for new production, reducing 
+                    mass amounts of water, energy, pesticide-heavy agriculture and toxic manufacturing dyes. 
+                    It also extends clothings lifespan keeping millions of textile waste out of land fills. 
+                </p>
+            </div>
+        </section>
+
+        <section class="tips">
+            <h2>Tips</h2>
+            <div class="brown">
+                <span>Wear a base layer (tanktop, bike shorts, slip on shoes) for easy try on.</span>
+                <span>Make a inspiration board on pinterest and stick to it.</span>
+                <span>Inspect the items you like for holes or stains</span>
+                <span>Sizes vary widely between brands so don't focus too much on that.</span>
+            </div>
+            <div class="white">
+                <span>Scan through racks. You can't focus on every item</span>
+                <span>Tackle stores section by section</span>
+                <span>Step out of your comfort zone and try new styles</span>
+                <span>Don't buy pieces that are similar to what you own.</span>
+            </div>
+        </section>   
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🧥 Rachael O'Moore 🧥 South Africa</p>
+        <p>References: <a href="refrences.html" title="refrences">refrences</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals – Project Best Locations Page</title>
+    <meta name="author" content="Rachael O'Moore">
+    <meta name="description" content="Best Locations Page for my WDD131 project. Thrifting page titled Hidden On A Hanger.">
+
+    <link rel="stylesheet" href="styles/best-locations.css">
+    <link rel="stylesheet" href="styles/best-locations-large.css">
+
+    <script src="scripts/year.js" defer></script>
+    <script src="scripts/filtertable.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inconsolata:wght@200..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <picture>
+            <source srcset="images/header.webp" media="(min-width: 1000px)" width="1500px" height="200px">
+            <source srcset="images/header.webp" media="(min-width: 600px)" width="1000px" height="200px">
+            <img src="images/header.webp" alt="Thrifting Image" width="600px" height="200px" loading="lazy">
+        </picture>
+        <div class="menu">
+            <h1>Hidden On a Hanger</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html" title="Home">Home</a></li>
+                    <li><a href="best-locations.html" class="active" title="thriftPlaces">Best Locations</a></li>
+                    <li><a href="recent-finds.html" title="recentFinds">Recent Finds</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section1">
+            <h2>Thrift Stores</h2>
+            <p>
+                Thrift stores, or second hand stores, that buy and sell pre-loved items
+                at a cheaper price. Thrift stores house a mix of everything. Accessories, 
+                formal wear, shoes, vintage clothing and even designer items.
+
+                Thrift stores in South Africa include: Second chance clothing, The sanctuary 
+                thrift and thrift vintage clothes
+            </p>
+        </section>
+
+        <section class="section2">
+            <h2>Markets</h2>
+            <p>
+                Markets are places with many vendors selling different things, food, collectables,
+                crafted goods and clothes. You can find second hand clothes there as well as 
+                crafted clothes, such as painted clothing or special crafted clothing. 
+
+                There are markets all over South Africa. You should google some of the closer
+                ones to you and find which have the best clothing to thrift.
+            </p>
+        </section>
+
+        <section class="section1">
+            <h2>Charity Shops</h2>
+            <p>
+                Charity Shops are second hand shops that receive their inventory from donations
+                and the profits they get from selling usually go towards non-profits or charity
+                organization. A bonus on buying from charity shops is you're supporting their 
+                organization.
+
+                Charity shops you can look for in South Africa include the SPCA charity stores, or 
+                disabled homes charity shops, or any other charity organization you can find.
+            </p>
+        </section>
+
+        <section class="section2">
+            <h2>Online Thrift Stores</h2>
+            <p>
+                Online thrift stores are similar to normal thrift stores, however users upload their
+                second hand clothing, put a price to it and sell it online. Many people use online thrifting
+                stores as it's more convenient while still being reasonably priced.
+
+                Online thrift stores that are South African based include: Yaga, ThriftyWays and Love it Again
+            </p>
+        </section>
+
+        <section class="section1"> 
+            <h2>Overstock stores</h2>
+            <p>
+                Overstock stores are stores that buy overstocked clothing from retail stores and sell
+                them at a discounted price. Although this isn't a second hand store, you can find good
+                qaulity clothes at a discounted price.
+
+                Overstock stores are relatively new in South Africa, there are some, such as Faro.
+            </p>
+        </section>
+
+        <label for="filter">Filter by:</label>
+        
+        <select id="filter">
+            <option value="all">All</option>
+            <option value="price">Price</option>
+            <option value="selection">Selection</option>
+            <option value="rating">Rating</option>
+        </select>
+
+        <table>
+            <caption>Comparison Table</caption>
+            <thead>
+                <tr>
+                    <th colspan="5" scope="colgroup" class="Theading">Thrift Locations</th>
+                </tr>
+                <tr>
+                    <th scope="col">Store</th>
+                    <th scope="col" class="long">Best For</th>
+                    <th scope="col">Price Range</th>
+                    <th scope="col">Selection</th>
+                    <th scope="col">Rating</th>
+                </tr>
+            </thead>
+            <tbody id="storesTable">
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🧥 Rachael O'Moore 🧥 South Africa</p>
+        <p>References: <a href="refrences.html" title="refrences">refrences</a></p>
+    </footer>
+</body>
+</html>

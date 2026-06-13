@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals – Project Recent Finds Page</title>
+    <meta name="author" content="Rachael O'Moore">
+    <meta name="description" content="Recent Finds Page for my WDD131 project. Thrifting page titled Hidden On A Hanger.">
+    
+    <link rel="stylesheet" href="styles/recent-finds.css">
+    <link rel="stylesheet" href="styles/recent-finds-large.css">
+
+    <script src="scripts/year.js" defer></script>
+    <script src="scripts/recentfinds.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inconsolata:wght@200..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <picture>
+            <source srcset="images/header.webp" media="(min-width: 1000px)" width="1500px" height="200px">
+            <source srcset="images/header.webp" media="(min-width: 600px)" width="1000px" height="200px">
+            <img src="images/header.webp" alt="Thrifting Image" width="600px" height="200px">
+        </picture>
+        <div class="menu">
+            <h1>Hidden On a Hanger</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html" title="Home">Home</a></li>
+                    <li><a href="best-locations.html" title="thriftPlaces">Best Locations</a></li>
+                    <li><a href="recent-finds.html" class="active" title="recentFinds">Recent Finds</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="findsCard"></section>
+
+        <form id="findsForm">
+            <fieldset>
+                <legend>Item information</legend>
+
+                <label for="userName">Your Name*</label>
+                <input type="text" id="userName" name="userName" required>
+
+                <label for="typeItem">What type of item is it?*</label>
+                <select id="typeItem" name="typeItem" required>
+                    <option value="" disabled selected>Select a type of item ...</option>
+                    <option value="jacket">Jacket</option>
+                    <option value="top">Top</option>
+                    <option value="pants">Pants</option>
+                    <option value="shorts">Shorts</option>
+                    <option value="skirt">Skirt</option>
+                    <option value="accessory">Accessory</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="description">Description of Item: (optional)</label>
+                <textarea id="description" name="description"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Location information</legend>
+
+                <label for="locationType">What type of thrift location did you find it at?*</label>
+                <select id="locationType" name="locationType" required>
+                    <option value="" disabled selected>Select a type of item ...</option>
+                    <option value="Thrift Store">Thrift Store</option>
+                    <option value="Market">Market</option>
+                    <option value="Charity Shop">Charity Shop</option>
+                    <option value="Online Thrift">Online Thrift Store</option>
+                    <option value="Overstock">Overstock Store</option>
+                    <option value="Other Location">Other location</option>
+                </select>
+
+                <label for="storeName">What is the stores name? (optional)</label>
+                <input type="text" id="storeName" name="storeName">
+            </fieldset>
+
+            <fieldset>
+                <legend>Other information (optional)</legend>
+
+                <label for="price">Price of Item:</label>
+                <input type="number" id="price" name="price">
+                
+                <fieldset class="condition">
+                    <legend>Condition of Item:</legend>
+
+                    <div>
+                        <label for="poor">Poor</label>
+                        <input type="radio" id="poor" name="condition" value="poor">
+                    </div>
+                    <div>
+                        <label for="fair">Fair</label>
+                        <input type="radio" id="fair" name="condition" value="fair">
+                    </div>
+                    <div>
+                        <label for="good">Good</label>
+                        <input type="radio" id="good" name="condition" value="good">
+                    </div>
+                    <div>
+                        <label for="excellent">Excellent</label>
+                        <input type="radio" id="excellent" name="condition" value="excellent">
+                    </div>
+                    <div>
+                        <label for="likeNew">Like New</label>
+                        <input type="radio" id="likeNew" name="condition" value="likeNew">
+                    </div>
+                </fieldset>
+
+                <label for="dateFound">Date Found</label>
+                <input type="date" id="dateFound" name="dateFound">
+
+                <label for="image">Item Picture:</label>
+                <input type="file" id="image" name="image">
+            </fieldset>
+
+            <button type="submit">Post Thrift Find</button>
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🧥 Rachael O'Moore 🧥 South Africa</p>
+        <p>References: <a href="refrences.html" title="refrences">refrences</a></p>
+    </footer>
+</body>
+</html>

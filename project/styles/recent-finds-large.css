@@ -1,0 +1,33 @@
+@media (min-width: 1000px) {
+
+    .menu {
+        display: flex;
+        align-items: center;
+        align-self: center;
+    }
+
+    .menu h1 {
+        text-align: left;
+        font-size: 350%;
+    }
+
+    .menu ul {
+        font-size: 200%;
+        text-align: right;
+    }
+
+    form {
+        width: 1000px;
+    }
+
+    input, select, textarea, .condition {
+        width: 90%;
+    }
+
+    section {
+        width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-self: left;
+    }
+}

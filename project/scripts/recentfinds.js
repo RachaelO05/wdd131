@@ -99,7 +99,7 @@ function createCard(find) {
         dateFoundHTML = `<p><strong>Date Found: </strong> ${find.dateFound}</p>`;
     }
     if (find.image) {
-        imageHTML = `<img src="${find.image}" alt="Thrift item image" width="200px" loading="lazy">`;
+        imageHTML = `<img src="${find.image}" alt="Thrift item image" width="200" loading="lazy">`;
     }
 
     card.innerHTML = `<h2>${find.userName}</h2>

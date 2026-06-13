@@ -1,7 +1,8 @@
 :root {
     --primary-color: #321f14;
-    --secondary-color: #6f4e3fe7;
+    --secondary-color: #916856e7;
     --accent1-color: #fff;
+    --active-color: #d8ac98d2;
 
     --heading-font: "Forum", serif;
     --content-font: "Inconsolata", monospace;
@@ -60,7 +61,7 @@ header picture {
 }
 
 .menu .active {
-    color: var(--primary-color);
+    color: var(--active-color);
     text-decoration: overline;
 }
 
@@ -170,4 +171,8 @@ footer {
     padding: 2rem;
     text-align: center;
     border-top: solid 5px var(--secondary-color);
+}
+
+footer a {
+    color: var(--accent1-color);
 }
